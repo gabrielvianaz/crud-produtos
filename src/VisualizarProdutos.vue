@@ -9,6 +9,12 @@
     ></AlertMessage>
     <AlertMessage
       class="mt-2"
+      v-if="alterarAlertError"
+      :type="'alert-danger'"
+      :text="'Alteração não efetuada. Preencha todas as informações'"
+    ></AlertMessage>
+    <AlertMessage
+      class="mt-2"
       v-if="excluirAlertSuccess"
       :type="'alert-danger'"
       :text="'Exclusão efetuada com sucesso'"
@@ -72,6 +78,7 @@ export default {
       exibirModalAlterar: false,
       exibirModalExcluir: false,
       alterarAlertSuccess: false,
+      alterarAlertError: false,
       excluirAlertSuccess: false,
     };
   },
@@ -96,6 +103,10 @@ export default {
         this.exibirModalAlterar = false;
         this.alterarAlertSuccess = true;
         setTimeout(() => (this.alterarAlertSuccess = false), 3000);
+      } else {
+        this.exibirModalAlterar = false;
+        this.alterarAlertError = true;
+        setTimeout(() => (this.alterarAlertError = false), 3000);
       }
     },
     excluirProduto(id) {

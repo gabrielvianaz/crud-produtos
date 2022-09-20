@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center">Cadastrar Produto</h1>
+    <h1 class="text-center">Cadastrar Produtos</h1>
     <AlertMessage
       class="mt-2"
       v-if="cadastroAlertSuccess"
@@ -11,7 +11,7 @@
       class="mt-2"
       v-if="cadastroAlertError"
       :type="'alert-danger'"
-      :text="'Preencha todas as informações'"
+      :text="'Cadastro não efetuado. Preencha todas as informações'"
     ></AlertMessage>
     <b-form name="formCadastrar">
       <b-form-group id="nomeGroup" label="Nome do produto:" label-for="nome">
