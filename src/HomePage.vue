@@ -4,9 +4,9 @@
     <p class="pt-2">
       Página feita com o objetivo de praticar a componentização, atribuição
       dinâmica de classes e criação/emissão de eventos customizados. Consiste em
-      um CRUD de produtos, possibilitando cadastro, alteração e exclusão. Os
-      dados são armazenados no LocalStorage, de modo que a sessão do usuário
-      continua salva mesmo após recarregar a página.
+      um CRUD de produtos, possibilitando cadastro, alteração, visualização e
+      exclusão. Os dados são armazenados no LocalStorage, de modo que a sessão
+      do usuário continua salva mesmo após recarregar a página.
     </p>
     <p>As seguintes tecnologias foram utilizadas:</p>
     <ul>
