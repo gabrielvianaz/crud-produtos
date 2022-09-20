@@ -67,9 +67,9 @@
 </template>
 
 <script>
-import ModalAlterarProduto from './ModalAlterarProduto.vue';
-import ModalExcluirProduto from './ModalExcluirProduto.vue';
-import AlertMessage from './AlertMessage.vue';
+import ModalAlterarProduto from '../components/ModalAlterarProduto.vue';
+import ModalExcluirProduto from '../components/ModalExcluirProduto.vue';
+import AlertMessage from '../components/AlertMessage.vue';
 export default {
   name: 'VisualizarProdutos',
   data() {

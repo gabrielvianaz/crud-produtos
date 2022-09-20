@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import CadastrarProduto from './CadastrarProduto.vue';
-import VisualizarProdutos from './VisualizarProdutos.vue';
-import MenuHeader from './MenuHeader.vue';
-import HomePage from './HomePage.vue';
+import CadastrarProduto from './views/CadastrarProduto.vue';
+import VisualizarProdutos from './views/VisualizarProdutos.vue';
+import MenuHeader from './components/MenuHeader.vue';
+import HomePage from './views/HomePage.vue';
 
 export default {
   name: 'App',

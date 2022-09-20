@@ -1,11 +1,19 @@
 <template>
   <div>
     <b-nav tabs align="center">
-      <b-nav-item id="HomePage" @click="alterarComponente">Home</b-nav-item>
-      <b-nav-item id="CadastrarProduto" @click="alterarComponente"
+      <b-nav-item to="/" id="HomePage" @click="alterarComponente"
+        >Home</b-nav-item
+      >
+      <b-nav-item
+        to="/cadastrar"
+        id="CadastrarProduto"
+        @click="alterarComponente"
         >Cadastrar Produtos</b-nav-item
       >
-      <b-nav-item id="VisualizarProdutos" @click="alterarComponente"
+      <b-nav-item
+        to="/visualizar"
+        id="VisualizarProdutos"
+        @click="alterarComponente"
         >Visualizar Produtos</b-nav-item
       >
     </b-nav>

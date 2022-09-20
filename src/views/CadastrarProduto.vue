@@ -38,8 +38,8 @@
 </template>
 
 <script>
-import CurrencyInput from './CurrencyInput.vue';
-import AlertMessage from './AlertMessage.vue';
+import CurrencyInput from '../components/CurrencyInput.vue';
+import AlertMessage from '../components/AlertMessage.vue';
 export default {
   name: 'CadastrarProduto',
   data() {
