@@ -22,5 +22,9 @@ export default new Router({
       path: '/visualizar',
       component: VisualizarProdutos,
     },
+    {
+      path: '*',
+      redirect: '/',
+    },
   ],
 });
