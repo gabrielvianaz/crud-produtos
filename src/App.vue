@@ -1,36 +1,28 @@
 <template>
   <div id="app">
-    <MenuHeader @evento-menu="alterarComponente"></MenuHeader>
+    <MenuHeader></MenuHeader>
     <div class="container">
-      <component
+      <router-view
         class="animate__animated animate__fadeIn mt-2"
-        :is="componenteAtivo"
         @evento-cadastrar="cadastrarProduto"
         @evento-alterar="alterarProduto"
         @evento-excluir="excluirProduto"
-      ></component>
+      ></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import CadastrarProduto from './views/CadastrarProduto.vue';
-import VisualizarProdutos from './views/VisualizarProdutos.vue';
 import MenuHeader from './components/MenuHeader.vue';
-import HomePage from './views/HomePage.vue';
 
 export default {
   name: 'App',
   data() {
     return {
       produtos: [],
-      componenteAtivo: 'HomePage',
     };
   },
   methods: {
-    alterarComponente(componente) {
-      this.componenteAtivo = componente;
-    },
     cadastrarProduto(dados) {
       this.produtos.push(dados);
       localStorage.produtos = JSON.stringify(this.produtos);
@@ -63,9 +55,6 @@ export default {
   },
   components: {
     MenuHeader,
-    CadastrarProduto,
-    VisualizarProdutos,
-    HomePage,
   },
 };
 </script>
